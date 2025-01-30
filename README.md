@@ -11,6 +11,6 @@ name_prefix  = ...
 ```
 # Licence
 If you download my code, you accepted my licence:
-  1. Its free to use, but You can donate me here: paypal.me/niesiek
-  2. You can tell something about me to your managmend.
-  3. If you used code, please contact to me if you have some troubles.
+  1. Its free to use, but You can donate me here: paypal.me/niesiek.
+  2. You can tell something about me to your management.
+  3. If you used code, please contact to me if you have some troubles..
