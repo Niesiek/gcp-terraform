@@ -1,1 +1,16 @@
-# gcp-terraform
+# Google Cloud Terraform configuration
+
+## How to use?
+Modify terraform.tfvars to your variables.
+### Example
+```terraform
+project      = "MyFirstGcpProj"
+region       = "us-central1"
+environment  = "production"
+name_prefix  = ...
+```
+#Licence
+If you download my code, you accepted my licence:
+  1. Its free to use, but You can donate me here: paypal.me/niesiek
+  2. You can tell something about me to your managmend.
+  3. If you used code, please contact to me if you have some troubles.
