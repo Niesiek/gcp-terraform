@@ -1,4 +1,4 @@
-# Google Cloud Terraform configuration
+# GCP Terraform Basic Configuration
 ## About the project
 I wrote an executive project for the Google Cloud to show my own skills, and also to have a cheat sheet when learning the Terraform language.
 The repository is constantly being updated
