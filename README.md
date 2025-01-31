@@ -1,5 +1,7 @@
 # Google Cloud Terraform configuration
-
+## About the project
+I wrote an executive project for the Google Cloud to show my own skills, and also to have a cheat sheet when learning the Terraform language.
+The repository is constantly being updated
 ## How to use?
 Modify terraform.tfvars to your variables.
 ### Example
