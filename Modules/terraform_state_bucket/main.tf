@@ -26,6 +26,18 @@ resource "google_storage_bucket" "terraform_state" {
       matches_storage_class = ["STANDARD"]
     }
   }
+
+  # Automatically deletes files that are older than 15 days and are no longer current.
+  lifecycle_rule {
+    action {
+      type = "Delete"
+    }
+    condition {
+      days_since_noncurrent_time = 15
+    }
+  }
+
+
   # Enable uniform bucket-level access for better access control
   uniform_bucket_level_access = true
 
@@ -34,11 +46,15 @@ resource "google_storage_bucket" "terraform_state" {
   lifecycle {
     prevent_destroy = true
   }
+
+
   # Configure logging for the bucket, specifying the log destination and prefix.
   logging {
     log_bucket = var.log_bucket_name
     log_object_prefix = "logs/"
   }
+
+
   # Assign labels to the bucket for better identification (e.g., environment and purpose).
   labels = {
     environment = var.environment
