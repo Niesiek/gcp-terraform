@@ -1,5 +1,5 @@
 resource "google_container_cluster" "primary" {
-  for_each = toset([for i in range(var.clvar.claster_count) : "k8s-cluster-${i + 1}"])
+  for_each = toset([for i in range(var.claster_count) : "k8s-cluster-${i + 1}"])
 
   name                = each.key
   project             = var.project
