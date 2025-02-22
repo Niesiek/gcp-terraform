@@ -9,13 +9,16 @@ variable "region" {
 }
 
 variable "admin_password" {
-  type = string
+  type      = string
   sensitive = true
 }
 variable "mysql_user_password" {
-  type = string
+  type      = string
   sensitive = true
 }
 variable "allowed_ips" {
   type = list(string)
+}
+variable "database_name" {
+  type = string
 }

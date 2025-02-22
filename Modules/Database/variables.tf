@@ -1,9 +1,9 @@
 variable "region" {
-  type = string
+  type    = string
   default = "us-central1"
 }
 variable "tier" {
-  type = string
+  type    = string
   default = "db-f1-micro"
 }
 variable "ennvironment" {
@@ -11,18 +11,18 @@ variable "ennvironment" {
 }
 
 variable "admin_password" {
-  type = string
+  type      = string
   sensitive = true
 }
 
 variable "mysql_user_password" {
-  type = string
+  type      = string
   sensitive = true
 }
 
 variable "allowed_ips" {
   description = "List of authorized IP addresses or CIDR blocks"
-  type = list(string)
+  type        = list(string)
 }
 
 variable "project" {
@@ -30,5 +30,9 @@ variable "project" {
 }
 
 variable "database_name" {
+  type = string
+}
+
+variable "environment" {
   type = string
 }
